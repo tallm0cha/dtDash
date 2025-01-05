@@ -15,12 +15,20 @@
         a { 
             color:white; 
         } 
-
+        td,th {
+            font-size:12px;
+            text-align:right;
+        }
         tr:nth-child(even) { background-color: rgb(50, 56, 62);}
         table, tr, th, td { 
             border-width: 1px; 
             border-color:rgb(90, 90, 90);
             border-collapse: collapse;
+        }
+        #tblHeader {
+            text-align: left;
+            font-weight: bold;
+
         }
     </style>
 </head>
@@ -28,7 +36,7 @@
     <div class="container">
         <table>
             <tr>
-                <td valign="top" halign="left"><b>New HOD</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">New HOD</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -43,8 +51,8 @@
   </thead>
   <tbody>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>New LOD</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">New LOD</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -69,10 +77,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.6%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>Pop</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">Pop</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -127,8 +135,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.9%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>Pop</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">Pop</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -153,10 +161,10 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.8%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>HA Pop</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">HA Pop</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -271,8 +279,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>HA Pop</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">HA Pop</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -387,10 +395,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>Top rCVol</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">Top rCVol</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -505,8 +513,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>Top rCVol</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">Top rCVol</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -621,10 +629,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>pctChg</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">pctChg</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -739,8 +747,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>pctChg</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">pctChg</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -855,10 +863,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>emaTrend</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">emaTrend</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -973,8 +981,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">106.3%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>emaTrend</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">emaTrend</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1089,10 +1097,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>rrs12c</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">rrs12c</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1207,8 +1215,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.1%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>rrs12c</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">rrs12c</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1323,10 +1331,10 @@
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
             <tr>
-                <td valign="top" halign="left"><b>Alert log</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+                <td valign="top"><div id="tblHeader">Alert log</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -2015,8 +2023,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">120.6%</span></td>
     </tr>
   </tbody>
-</table></div></td>
-                <td valign="top" halign="left"><b>Alert log</b><br><div halign="right"><table border="1" class="dataframe table table-dark table-striped">
+</table></td>
+                <td valign="top"><div id="tblHeader">Alert log</div><br><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -2189,10 +2197,10 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">114.2%</span></td>
     </tr>
   </tbody>
-</table></div></td>
+</table></td>
             </tr>
         </table>
 
-    </div>
+    
 </body>
 </html>
