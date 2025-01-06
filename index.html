@@ -25,19 +25,51 @@
             border-color:rgb(90, 90, 90);
             border-collapse: collapse;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        details {
+            width: 100%;
+        }
+
+        summary {
+            padding: 8px;
+            background: #f0f0f0;
+            cursor: pointer;
+        }
+
+        summary:hover {
+            background: #e0e0e0;
+        }
+
+        .row-content {
+            display: flex;
+            padding: 10px;
+        }
+
+        .cell {
+            flex: 1;
+            vertical-align: top;
+            text-align: left;
+        }
         #tblHeader {
             text-align: left;
             font-weight: bold;
             font-size:14px;
-            margin-top: 10px;
+            margin-top: 7px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <table style="width:100%">
-            <tr>
-                <td valign="top"><div id="tblHeader">New HOD</div><table border="1" class="dataframe table table-dark table-striped">
+    <table>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>HOD/LOD</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -52,8 +84,8 @@
   </thead>
   <tbody>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">New LOD</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -75,13 +107,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.21</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-4.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.6%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.6%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">Pop</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>Pop</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -113,7 +152,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.58</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HOOD', 'newwindow', 'width=1250, height=1050'); return false;">HOOD</a></td>
@@ -123,7 +162,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.6</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.9%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=EAT', 'newwindow', 'width=1250, height=1050'); return false;">EAT</a></td>
@@ -133,11 +172,11 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.56</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.6%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.9%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">Pop</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -159,13 +198,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.82</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.5%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.8%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">HA Pop</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>HA Pop</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -217,7 +263,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.26</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.3%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.3%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=ENVX', 'newwindow', 'width=1250, height=1050'); return false;">ENVX</a></td>
@@ -257,7 +303,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.16</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.7%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.7%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HOOD', 'newwindow', 'width=1250, height=1050'); return false;">HOOD</a></td>
@@ -267,7 +313,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.6</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.9%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=KGS', 'newwindow', 'width=1250, height=1050'); return false;">KGS</a></td>
@@ -277,11 +323,11 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.58</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">HA Pop</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -313,7 +359,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.82</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.5%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=NEHC', 'newwindow', 'width=1250, height=1050'); return false;">NEHC</a></td>
@@ -333,7 +379,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.08</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HUN', 'newwindow', 'width=1250, height=1050'); return false;">HUN</a></td>
@@ -343,7 +389,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.21</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-4.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.6%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.6%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TSCO', 'newwindow', 'width=1250, height=1050'); return false;">TSCO</a></td>
@@ -373,7 +419,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.42</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.4%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=PPG', 'newwindow', 'width=1250, height=1050'); return false;">PPG</a></td>
@@ -383,7 +429,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.65</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.5%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TXT', 'newwindow', 'width=1250, height=1050'); return false;">TXT</a></td>
@@ -393,13 +439,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.79</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.1%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">Top rCVol</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>Top rCVol</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -431,7 +484,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.67</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.5%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=VST', 'newwindow', 'width=1250, height=1050'); return false;">VST</a></td>
@@ -441,7 +494,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.26</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.3%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.3%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HTGC', 'newwindow', 'width=1250, height=1050'); return false;">HTGC</a></td>
@@ -451,7 +504,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.55</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">6.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.5%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=CEG', 'newwindow', 'width=1250, height=1050'); return false;">CEG</a></td>
@@ -461,7 +514,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.52</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=EVRI', 'newwindow', 'width=1250, height=1050'); return false;">EVRI</a></td>
@@ -471,7 +524,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">1.51</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.1%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=ADTN', 'newwindow', 'width=1250, height=1050'); return false;">ADTN</a></td>
@@ -481,7 +534,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.18</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TLN', 'newwindow', 'width=1250, height=1050'); return false;">TLN</a></td>
@@ -491,7 +544,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.49</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=BROS', 'newwindow', 'width=1250, height=1050'); return false;">BROS</a></td>
@@ -501,7 +554,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.48</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.4%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=U', 'newwindow', 'width=1250, height=1050'); return false;">U</a></td>
@@ -511,11 +564,11 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.0</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">Top rCVol</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -567,7 +620,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.8</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.7%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.7%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TROX', 'newwindow', 'width=1250, height=1050'); return false;">TROX</a></td>
@@ -577,7 +630,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.08</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TXT', 'newwindow', 'width=1250, height=1050'); return false;">TXT</a></td>
@@ -587,7 +640,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.79</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.1%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=LXP', 'newwindow', 'width=1250, height=1050'); return false;">LXP</a></td>
@@ -597,7 +650,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.36</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.2%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=NEHC', 'newwindow', 'width=1250, height=1050'); return false;">NEHC</a></td>
@@ -617,7 +670,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.92</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=PPG', 'newwindow', 'width=1250, height=1050'); return false;">PPG</a></td>
@@ -627,13 +680,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.65</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.5%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">pctChg</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>pctChg</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -685,7 +745,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.26</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.3%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.3%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=ENVX', 'newwindow', 'width=1250, height=1050'); return false;">ENVX</a></td>
@@ -725,7 +785,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.16</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.7%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.7%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HOOD', 'newwindow', 'width=1250, height=1050'); return false;">HOOD</a></td>
@@ -735,7 +795,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.6</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.9%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=KGS', 'newwindow', 'width=1250, height=1050'); return false;">KGS</a></td>
@@ -745,11 +805,11 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.58</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">pctChg</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -781,7 +841,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.82</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.5%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=NEHC', 'newwindow', 'width=1250, height=1050'); return false;">NEHC</a></td>
@@ -801,7 +861,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.08</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HUN', 'newwindow', 'width=1250, height=1050'); return false;">HUN</a></td>
@@ -811,7 +871,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.21</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-4.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.6%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.6%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TSCO', 'newwindow', 'width=1250, height=1050'); return false;">TSCO</a></td>
@@ -841,7 +901,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.42</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.4%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=PPG', 'newwindow', 'width=1250, height=1050'); return false;">PPG</a></td>
@@ -851,7 +911,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.65</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.5%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TXT', 'newwindow', 'width=1250, height=1050'); return false;">TXT</a></td>
@@ -861,13 +921,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.79</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.1%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">emaTrend</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>emaTrend</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -982,8 +1049,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">106.3%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">emaTrend</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1055,7 +1122,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.37</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-4.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TROX', 'newwindow', 'width=1250, height=1050'); return false;">TROX</a></td>
@@ -1065,7 +1132,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.08</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=LXP', 'newwindow', 'width=1250, height=1050'); return false;">LXP</a></td>
@@ -1075,7 +1142,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.36</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.2%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HOG', 'newwindow', 'width=1250, height=1050'); return false;">HOG</a></td>
@@ -1085,7 +1152,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.37</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.3%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.3%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=PPG', 'newwindow', 'width=1250, height=1050'); return false;">PPG</a></td>
@@ -1095,13 +1162,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.65</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.5%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">rrs12c</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>rrs12c</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1123,7 +1197,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.56</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.6%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.9%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=VST', 'newwindow', 'width=1250, height=1050'); return false;">VST</a></td>
@@ -1133,7 +1207,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.26</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.3%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.3%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=CRDO', 'newwindow', 'width=1250, height=1050'); return false;">CRDO</a></td>
@@ -1143,7 +1217,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.4</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">100.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">100.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=FOUR', 'newwindow', 'width=1250, height=1050'); return false;">FOUR</a></td>
@@ -1153,7 +1227,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.41</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.1%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=HOOD', 'newwindow', 'width=1250, height=1050'); return false;">HOOD</a></td>
@@ -1163,7 +1237,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.6</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.9%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.9%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=KGS', 'newwindow', 'width=1250, height=1050'); return false;">KGS</a></td>
@@ -1173,7 +1247,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.58</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.7%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=EBS', 'newwindow', 'width=1250, height=1050'); return false;">EBS</a></td>
@@ -1213,11 +1287,11 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.11</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.1%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">rrs12c</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1259,7 +1333,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.65</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.3%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.5%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.5%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=PANW', 'newwindow', 'width=1250, height=1050'); return false;">PANW</a></td>
@@ -1279,7 +1353,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">5.21</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.0%</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-4.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">98.6%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">98.6%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TSCO', 'newwindow', 'width=1250, height=1050'); return false;">TSCO</a></td>
@@ -1299,7 +1373,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.92</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=WU', 'newwindow', 'width=1250, height=1050'); return false;">WU</a></td>
@@ -1309,7 +1383,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">6.47</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.2%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.2%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TXT', 'newwindow', 'width=1250, height=1050'); return false;">TXT</a></td>
@@ -1319,7 +1393,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.79</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">99.1%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">99.1%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TROX', 'newwindow', 'width=1250, height=1050'); return false;">TROX</a></td>
@@ -1329,13 +1403,20 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">4.08</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.2%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">97.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">97.8%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-            <tr>
-                <td valign="top"><div id="tblHeader">Alert log</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>    
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>Alert log</summary>
+                    <div class="row-content">
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -1361,7 +1442,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.19</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=VSTM', 'newwindow', 'width=1250, height=1050'); return false;">VSTM</a></td>
@@ -1541,7 +1622,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.19</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=VSTM', 'newwindow', 'width=1250, height=1050'); return false;">VSTM</a></td>
@@ -1889,7 +1970,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.19</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.1%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">0.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.0%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.0%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=TSSI', 'newwindow', 'width=1250, height=1050'); return false;">TSSI</a></td>
@@ -2024,8 +2105,8 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">120.6%</span></td>
     </tr>
   </tbody>
-</table></td>
-                <td valign="top"><div id="tblHeader">Alert log</div><table border="1" class="dataframe table table-dark table-striped">
+</table></div>
+                        <div class="cell"><table border="1" class="dataframe table table-dark table-striped">
   <thead>
     <tr style="text-align: right;">
       <th>tic</th>
@@ -2123,7 +2204,7 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">3.82</span></td>
       <td><span class="sig" style="background-color: #990000;color: #FFFFFF;">-0.5%</span></td>
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">2.0</span></td>
-      <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">101.8%</span></td>
+      <td><span class="sig" style="background-color: #946803 ;color: #FFFFFF;">101.8%</span></td>
     </tr>
     <tr>
       <td><a href="#" onclick="window.open('https://www.tradingview.com/chart/gBpcRDUd/?symbol=NEHC', 'newwindow', 'width=1250, height=1050'); return false;">NEHC</a></td>
@@ -2198,10 +2279,23 @@
       <td><span class="sig" style="background-color: #1b5e20;color: #FFFFFF;">114.2%</span></td>
     </tr>
   </tbody>
-</table></td>
-            </tr>
-        </table>
-
-    
+</table></div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <details>
+                    <summary>Row 9</summary>
+                    <div class="row-content">
+                        <div class="cell">top left</div>
+                        <div class="cell">top left</div>
+                    </div>
+                </details>
+            </td>
+        </tr>
+    </table>
+        
 </body>
 </html>
